@@ -3,7 +3,8 @@ import { Carousel } from "@/sections/Carousel";
 import { Gallery } from "@/sections/Gallery";
 import { CompanyPillars } from "@/sections/CompanyPillars";
 import { Catalogue } from "@/sections/Catalogue";
-import {LogoTicker} from '@/sections/LogoTicker'
+import { LogoTicker } from "@/sections/LogoTicker";
+import { Testimonials } from "@/sections/Testimonials";
 
 export default function Home() {
   return (
@@ -13,7 +14,8 @@ export default function Home() {
       <Gallery />
       <CompanyPillars />
       <Catalogue />
-      <LogoTicker/>
+      <LogoTicker />
+      <Testimonials />
     </>
   );
 }
