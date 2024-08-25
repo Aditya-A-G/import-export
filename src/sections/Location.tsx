@@ -38,10 +38,10 @@ export const Location = () => {
   const [selectedLocation, setSelectedLocation] = useState<string>(
     data[0].location
   );
-
-  const isDesktop = typeof window !== "undefined" && window.innerWidth >= 1024;
+  const [isMounted, setIsMounted] = useState(false);
 
   useEffect(() => {
+    setIsMounted(true)
     // Show the first location by default on mobile/tablet
     setShowLocation((prevLocations) => {
       const updatedLocation = [...prevLocations];
@@ -50,9 +50,12 @@ export const Location = () => {
     });
   }, []);
 
+  const isDesktop = isMounted && window.innerWidth >= 1024;
+
+
   return (
     <section className="bg-[#e6e7e8]">
-      <div className="  border border-gray-400 py-6 h-[169px] md:h-56 lg:h-64 flex justify-center items-center">
+      <div className="border border-gray-400 py-6 h-[169px] md:h-56 lg:h-64 flex justify-center items-center">
         <div className="w-11/12 text-center py-6">
           <h2 className="font-extrabold text-3xl lg:text-4xl">
             Find us all over the GCC.
