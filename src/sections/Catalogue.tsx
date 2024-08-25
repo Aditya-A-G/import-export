@@ -6,7 +6,7 @@ export const Catalogue = () => {
           Browse Our Catalogue
         </h3>
       </div>
-      <div className="border w-full md:w-2/3">
+      <div className="w-full md:w-2/3 lg:w-1/2">
         <div className="grid md:grid-cols-2 gap-5 md:gap-8 lg:gap-10">
           <button className="bg-black text-white w-full h-24 md:h-20 hover:bg-[#4DAEC2]">
             UAE
