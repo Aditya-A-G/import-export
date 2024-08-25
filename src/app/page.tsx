@@ -5,6 +5,7 @@ import { CompanyPillars } from "@/sections/CompanyPillars";
 import { Catalogue } from "@/sections/Catalogue";
 import { LogoTicker } from "@/sections/LogoTicker";
 import { Testimonials } from "@/sections/Testimonials";
+import { Location } from "@/sections/Location";
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
       <Catalogue />
       <LogoTicker />
       <Testimonials />
+      <Location />
     </>
   );
 }
