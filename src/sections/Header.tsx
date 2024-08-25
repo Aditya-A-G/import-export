@@ -57,7 +57,7 @@ export const Header = () => {
   }, []);
 
   return (
-    <header>
+    <header id="top">
       <div className="flex justify-center py-2.5 bg-[#39b54a]">
         <div className="font-medium tracking-tighter text-sm">
           Click here to download our catalogue{" "}
