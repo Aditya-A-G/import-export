@@ -9,7 +9,8 @@ export const Catalogue = () => {
       <div className="w-full md:w-1/3 lg:w-1/3">
         <div>
           <button className="bg-black text-white w-full h-24 md:h-20 hover:bg-[#4DAEC2]">
-            UAE
+            <a href="/AbdulAziz_Catalogue.pdf">UAE</a>
+            
           </button>
         </div>
       </div>
