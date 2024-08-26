@@ -10,7 +10,7 @@ export const Header = () => {
   const [isNavOpen, setIsNavOpen] = useState(false);
 
   return (
-    <header id="top" className="sticky z-50 top-0 bg-white">
+    <header className="sticky z-50 top-0 bg-white">
       <div className=" flex h-16 cursor-pointer md:px-5">
         <div className="flex-grow md:flex-grow-0 flex justify-center items-center">
           <Image src={logo} alt="logo" />

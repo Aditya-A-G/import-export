@@ -2,6 +2,7 @@ import Image from "next/image";
 import facebookLogo from "/public/facebook.png";
 import instagramLogo from "/public/instagram.png";
 import linkedinLogo from "/public/linkedin.png";
+import upArrow from "/public/arrow.png";
 
 export const Footer = () => {
   return (
@@ -35,10 +36,13 @@ export const Footer = () => {
             </div>
           </div>
         </div>
-        <div className="hidden lg:flex justify-center items-center">
-          <button>
-            <a href="#top">Top</a>
-          </button>
+        <div className="hidden lg:flex justify-center items-center ">
+          <a href="#home">
+            <button className="flex justify-center items-center gap-1">
+              <Image src={upArrow} alt="up arrow" className="w-10" />
+              Top
+            </button>
+          </a>
         </div>
       </div>
 
