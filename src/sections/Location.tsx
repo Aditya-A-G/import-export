@@ -48,7 +48,7 @@ export const Location = () => {
 
         <iframe
           src={data[0].location}
-          className="border-0 w-full lg:w-svw h-72 lg:h-[450px] md:h-72"
+          className="border-0 w-full h-72 lg:h-[450px] md:h-72"
           loading="lazy"
         ></iframe>
       </div>
