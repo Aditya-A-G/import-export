@@ -24,19 +24,19 @@ export const Header = () => {
         </div>
         <div className="hidden md:flex flex-grow justify-center items-center">
           <ul className="flex  w-full justify-end gap-5">
-            <li className="uppercase">
+            <li className="hover:border-b hover:border-blue-400 uppercase">
               <a href="#home">Home</a>
             </li>
-            <li className="uppercase">
+            <li className="hover:border-b hover:border-blue-400 uppercase">
               <a href="#catalogue">Catalogue</a>
             </li>
-            <li className="uppercase">
+            <li className="hover:border-b hover:border-blue-400 uppercase">
               <a href="#brands">Brands</a>
             </li>
-            <li className="uppercase">
+            <li className="hover:border-b hover:border-blue-400 uppercase">
               <a href="#location">Location</a>
             </li>
-            <li className="uppercase">
+            <li className="hover:border-b hover:border-blue-400 uppercase">
               <a href="#contact">Contact</a>
             </li>
           </ul>
@@ -68,27 +68,27 @@ export const Header = () => {
           </svg>
         </div>
         <ul className="flex flex-col items-center justify-between min-h-[250px]">
-          <li className="border-b border-gray-400 my-8 uppercase">
+          <li className="border-b border-gray-400 hover:border-blue-400 my-8 uppercase">
             <a href="#home" onClick={() => setIsNavOpen(false)}>
               Home
             </a>
           </li>
-          <li className="border-b border-gray-400 my-8 uppercase">
+          <li className="border-b border-gray-400 hover:border-blue-400 my-8 uppercase">
             <a href="#catalogue" onClick={() => setIsNavOpen(false)}>
               Catalogue
             </a>
           </li>
-          <li className="border-b border-gray-400 my-8 uppercase">
+          <li className="border-b border-gray-400 hover:border-blue-400 my-8 uppercase">
             <a href="#brands" onClick={() => setIsNavOpen(false)}>
               Brands
             </a>
           </li>
-          <li className="border-b border-gray-400 my-8 uppercase">
+          <li className="border-b border-gray-400 hover:border-blue-400 my-8 uppercase">
             <a href="#location" onClick={() => setIsNavOpen(false)}>
               Location
             </a>
           </li>
-          <li className="border-b border-gray-400 my-8 uppercase">
+          <li className="border-b border-gray-400 hover:border-blue-400 my-8 uppercase">
             <a href="#contact" onClick={() => setIsNavOpen(false)}>
               Contact
             </a>
