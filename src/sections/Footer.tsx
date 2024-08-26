@@ -5,7 +5,7 @@ import linkedinLogo from "/public/linkedin.png";
 
 export const Footer = () => {
   return (
-    <footer className="mt-10 border-t border-gray-300 py-5">
+    <footer id="contact" className="mt-10 border-t border-gray-300 py-5">
       <div className=" flex flex-col md:flex-row w-full justify-between items-center md:px-16   ">
         <div className="w-2/3 md:w-1/3 text-center md:text-start  md:text-lg">
           <div className="font-bold">Address :</div>

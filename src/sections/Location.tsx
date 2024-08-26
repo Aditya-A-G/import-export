@@ -8,7 +8,7 @@ const data = [
 
 export const Location = () => {
   return (
-    <section className="bg-[#e6e7e8]">
+    <section id="location" className="bg-[#e6e7e8]">
       <div className="border border-gray-400 py-6 h-[169px] md:h-56 lg:h-64 flex justify-center items-center">
         <div className="w-11/12 text-center py-6">
           <h2 className="font-extrabold text-3xl lg:text-4xl">Find us Here</h2>

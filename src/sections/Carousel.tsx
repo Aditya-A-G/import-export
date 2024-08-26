@@ -19,9 +19,6 @@ export const Carousel = () => {
     setIndex((prevIndex) => (prevIndex === NO_OF_IMAGES ? 0 : prevIndex + 1));
   }, []);
 
-  const handlePrevious = useCallback(() => {
-    setIndex((prevIndex) => (prevIndex === 0 ? NO_OF_IMAGES : prevIndex - 1));
-  }, []);
 
   const handleMouseEnter = useCallback(() => {
     if (intervalId.current) {
@@ -45,6 +42,7 @@ export const Carousel = () => {
 
   return (
     <section
+    id="home"
       className="relative"
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
