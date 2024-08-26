@@ -1,37 +1,12 @@
-"use client";
-import { useState, useEffect } from "react";
-
-import { Accordion } from "@/sections/Accordion";
-
 const data = [
   {
     name: "Dubai",
     location:
-      "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7233.928613414238!2d55.198634!3d24.967329!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f73b4887d9dbf%3A0x2fb2b3a0a4ee08cd!2sGreenhouse%20Foodstuff%20Trading%20LLC!5e0!3m2!1sen!2sus!4v1724574150590!5m2!1sen!2sus",
+      "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3607.364432673707!2d55.32184892625848!3d25.291957177650122!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f5b58524192c5%3A0x1df225a0347f3c8e!2sWaterfront%20Market!5e0!3m2!1sen!2sin!4v1724675969325!5m2!1sen!2sin",
   },
 ];
 
 export const Location = () => {
-  const [showLocation, setShowLocation] = useState<boolean[]>(
-    Array(data.length).fill(false)
-  );
-  const [selectedLocation, setSelectedLocation] = useState<string>(
-    data[0].location
-  );
-  const [isMounted, setIsMounted] = useState(false);
-
-  useEffect(() => {
-    setIsMounted(true);
-    // Show the first location by default on mobile/tablet
-    setShowLocation((prevLocations) => {
-      const updatedLocation = [...prevLocations];
-      updatedLocation[0] = true;
-      return updatedLocation;
-    });
-  }, []);
-
-  const isDesktop = isMounted && window.innerWidth >= 1024;
-
   return (
     <section className="bg-[#e6e7e8]">
       <div className="border border-gray-400 py-6 h-[169px] md:h-56 lg:h-64 flex justify-center items-center">
