@@ -18,7 +18,7 @@ export const Location = () => {
 
       <div className="w-full">
         <div className="border-b border-gray-400 h-16 flex justify-center items-center">
-          <h3>{data[0].name}</h3>
+          <h3 className="text-lg md:text-2xl font-semibold">{data[0].name}</h3>
         </div>
 
         <iframe

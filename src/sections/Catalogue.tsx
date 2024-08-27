@@ -1,8 +1,8 @@
 export const Catalogue = () => {
   return (
-    <section id="catalogue" className="bg-catalogue w-full bg-no-repeat bg-cover h-[500px] flex flex-col items-center px-5 py-8 md:py-16 lg:py-20 gap-10">
+    <section id="catalogue" className="bg-catalogue w-full bg-no-repeat bg-cover h-[500px] bg-center flex flex-col items-center px-5 py-8 md:py-16 lg:py-20 gap-10">
       <div className="w-full lg:w-2/5 border-b-8 border-white py-5 flex justify-center items-center md:w-1/2">
-        <h3 className="text-white text-3xl lg:text-4xl  font-extrabold text-center">
+        <h3 className="[text-shadow:_0_2px_4px_#333332] text-white text-3xl lg:text-4xl  font-extrabold text-center">
           Browse Our Catalogue
         </h3>
       </div>

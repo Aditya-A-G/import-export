@@ -10,7 +10,7 @@ const config: Config = {
   theme: {
     extend: {
       backgroundImage: {
-          'catalogue': "url('/1.png')",
+          'catalogue': "url('/fishs/snapper.png')",
       },
     },
   },

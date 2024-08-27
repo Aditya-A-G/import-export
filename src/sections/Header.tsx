@@ -11,16 +11,24 @@ export const Header = () => {
 
   return (
     <header className="sticky z-50 top-0 bg-white">
-      <div className=" flex h-16 cursor-pointer md:px-5">
-        <div className="flex-grow md:flex-grow-0 flex justify-center items-center">
-          <Image src={logo} alt="logo" />
+      <div className=" flex h-16 cursor-pointer border md:px-5">
+        <div className="flex-grow md:flex-grow-0 flex md:justify-center items-center sm:pl-5 md:pl-0">
+          <a href="#home" className="flex items-center">
+            <Image
+              src={logo}
+              alt="logo"
+              className="w-16 object-cover"
+              quality={100}
+            />{" "}
+            Abdulaziz Rahim
+          </a>
         </div>
 
         <div
           className="md:hidden bg-black w-16 md:w-28 flex justify-center items-center "
           onClick={() => setIsNavOpen(true)}
         >
-          <Image src={menuIcon} alt="Menu icon" />
+          <Image src={menuIcon} alt="Menu icon" quality={100} />
         </div>
         <div className="hidden md:flex flex-grow justify-center items-center">
           <ul className="flex  w-full justify-end gap-5">

@@ -26,20 +26,36 @@ export const Footer = () => {
           <div className="flex flex-col justify-center items-center md:items-start gap-5">
             <span className="font-bold">Follow Us</span>
             <div className="flex gap-5">
-              <Image src={facebookLogo} alt="facebook logo" className="w-16" />
+              <Image
+                src={facebookLogo}
+                alt="facebook logo"
+                className="w-16"
+                quality={100}
+              />
               <Image
                 src={instagramLogo}
                 alt="instagram logo"
                 className="w-16"
+                quality={100}
               />
-              <Image src={linkedinLogo} alt="linkedin logo" className="w-16" />
+              <Image
+                src={linkedinLogo}
+                alt="linkedin logo"
+                className="w-16"
+                quality={100}
+              />
             </div>
           </div>
         </div>
         <div className="hidden lg:flex justify-center items-center ">
           <a href="#home">
             <button className="flex justify-center items-center gap-1">
-              <Image src={upArrow} alt="up arrow" className="w-10" />
+              <Image
+                src={upArrow}
+                alt="up arrow"
+                className="w-10"
+                quality={100}
+              />
               Top
             </button>
           </a>

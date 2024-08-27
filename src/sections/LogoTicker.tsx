@@ -1,16 +1,15 @@
 "use client";
-import acmeLogo from "/public/logo-acme.png";
-import quantumLogo from "/public/logo-quantum.png";
-import echoLogo from "/public/logo-echo.png";
-import celestialLogo from "/public/logo-celestial.png";
-import pulseLogo from "/public/logo-pulse.png";
-import apexLogo from "/public/logo-apex.png";
+
+import theCatchLogo from "/public/clients/the_catch.png";
+import dampaLogo from "/public/clients/dampa.png";
+import seaBrillLogo from "/public/clients/sea_brill.png";
+import shrimpPotLogo from "/public/clients/shrimp_pot.png";
 import Image from "next/image";
 import { motion } from "framer-motion";
 
 export const LogoTicker = () => {
   return (
-    <div id="brands" className="py-8 md:py-12 bg-white flex justify-center">
+    <div id="brands" className="py-4 md:py-8 bg-white flex justify-center">
       <div className="container">
         <div className="flex overflow-hidden [mask-image:linear-gradient(to_right,transparent,black,transparent)]">
           <motion.div
@@ -20,68 +19,104 @@ export const LogoTicker = () => {
               duration: 20,
               repeat: Infinity,
               ease: "linear",
-              repeatType: "loop"
+              repeatType: "loop",
             }}
           >
             <Image
-              src={acmeLogo}
+              src={theCatchLogo}
               alt="Acme Logo"
               className="logo-ticker-image"
+              quality={100}
             />
             <Image
-              src={quantumLogo}
+              src={dampaLogo}
               alt="QuantumLogo Logo"
               className="logo-ticker-image"
+              quality={100}
             />
             <Image
-              src={echoLogo}
+              src={seaBrillLogo}
               alt="EchoLogo Logo"
               className="logo-ticker-image"
+              quality={100}
             />
             <Image
-              src={celestialLogo}
+              src={shrimpPotLogo}
               alt="CelestialLogo Logo"
               className="logo-ticker-image"
+              quality={100}
             />
             <Image
-              src={pulseLogo}
-              alt="PulseLogo Logo"
-              className="logo-ticker-image"
-            />
-            <Image
-              src={apexLogo}
-              alt="ApexLogo Logo"
-              className="logo-ticker-image"
-            />
-            <Image
-              src={acmeLogo}
+              src={theCatchLogo}
               alt="Acme Logo"
               className="logo-ticker-image"
+              quality={100}
             />
             <Image
-              src={quantumLogo}
+              src={dampaLogo}
               alt="QuantumLogo Logo"
               className="logo-ticker-image"
+              quality={100}
             />
             <Image
-              src={echoLogo}
+              src={seaBrillLogo}
               alt="EchoLogo Logo"
               className="logo-ticker-image"
+              quality={100}
             />
             <Image
-              src={celestialLogo}
+              src={shrimpPotLogo}
               alt="CelestialLogo Logo"
               className="logo-ticker-image"
+              quality={100}
             />
             <Image
-              src={pulseLogo}
-              alt="PulseLogo Logo"
+              src={theCatchLogo}
+              alt="Acme Logo"
               className="logo-ticker-image"
+              quality={100}
             />
             <Image
-              src={apexLogo}
-              alt="ApexLogo Logo"
+              src={dampaLogo}
+              alt="QuantumLogo Logo"
               className="logo-ticker-image"
+              quality={100}
+            />
+            <Image
+              src={seaBrillLogo}
+              alt="EchoLogo Logo"
+              className="logo-ticker-image"
+              quality={100}
+            />
+            <Image
+              src={shrimpPotLogo}
+              alt="CelestialLogo Logo"
+              className="logo-ticker-image"
+              quality={100}
+            />
+            <Image
+              src={theCatchLogo}
+              alt="Acme Logo"
+              className="logo-ticker-image"
+              quality={100}
+            />
+            <Image
+              src={dampaLogo}
+              alt="QuantumLogo Logo"
+              className="logo-ticker-image"
+              quality={100}
+            />
+            <Image
+              src={seaBrillLogo}
+              alt="EchoLogo Logo"
+              className="logo-ticker-image"
+              quality={100}
+            />
+            <Image
+              src={shrimpPotLogo}
+              alt="CelestialLogo Logo"
+              className="logo-ticker-image"
+              quality={100}
             />
           </motion.div>
         </div>

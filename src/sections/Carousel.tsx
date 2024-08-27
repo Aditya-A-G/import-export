@@ -2,14 +2,15 @@
 
 import { useEffect, useRef, useState, useCallback } from "react";
 import Image from "next/image";
-import firstImage from "/public/1.png";
-import secondImage from "/public/2.png";
-import thirdImage from "/public/3.png";
+import salmon from "/public/fishs/salmon.png";
+import crab from "/public/fishs/crab.png";
+import tuna from "/public/fishs/tuna.png";
+
 import clsx from "clsx";
 
-const data = [firstImage, secondImage, thirdImage];
+const data = [salmon, crab, tuna];
 const NO_OF_IMAGES = data.length - 1;
-const INTERVAL_TIME = 10000;
+const INTERVAL_TIME = 3000;
 
 export const Carousel = () => {
   const [index, setIndex] = useState(0);
@@ -18,7 +19,6 @@ export const Carousel = () => {
   const handleNext = useCallback(() => {
     setIndex((prevIndex) => (prevIndex === NO_OF_IMAGES ? 0 : prevIndex + 1));
   }, []);
-
 
   const handleMouseEnter = useCallback(() => {
     if (intervalId.current) {
@@ -42,7 +42,7 @@ export const Carousel = () => {
 
   return (
     <section
-    id="home"
+      id="home"
       className="relative"
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
@@ -50,7 +50,8 @@ export const Carousel = () => {
       <Image
         src={data[index]}
         alt="Image"
-        className="w-full h-[320px] md:h-[475px] object-cover"
+        className="w-full h-[320px] md:h-[475px] lg:h-[550px]  bg-center object-cover"
+        quality={100}
       />
 
       <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2">

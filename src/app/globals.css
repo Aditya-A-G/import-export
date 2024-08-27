@@ -2,3 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
+.logo-ticker-image {
+    @apply w-24 object-cover;
+  }
