@@ -6,9 +6,9 @@ export const Catalogue = () => {
           Browse Our Catalogue
         </h3>
       </div>
-      <div className="w-full md:w-1/3 lg:w-1/4">
+      <div className="w-2/3 md:w-1/3 lg:w-1/4">
         <div>
-          <button className="bg-black text-white w-full h-24 md:h-20 hover:bg-[#4DAEC2]">
+          <button className="bg-black text-white w-full h-16 md:h-20 hover:bg-[#4DAEC2]">
             <a href="/AbdulAziz_Catalogue.pdf">UAE</a>
           </button>
         </div>
